@@ -9,5 +9,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'adcogburn.github.io';
+  introduction = "Hello, my name is";
+  name = "Andrew Cogburn";
+  aboutMe = " and I am a web dev from Houston, TX.";
+
+  projects = [
+    { id: 1, name: 'Cogburn Books', description: 'An e-commerce website hosting language education novellas, built by me using .NET and Angular.'},
+    { id: 2, name: 'Biblingo', description: 'A language learning platform where I worked on the flashcard deck business rules.'}
+  ];
 }

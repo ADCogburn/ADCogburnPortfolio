@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+// TODO: Create useful tests (do to links work, etc.). Consider using Jester or Playright for full useful tests.
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -14,10 +15,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'adcogburn.github.io' title`, () => {
+  it(`should have the 'Hello, my name is' introduction`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('adcogburn.github.io');
+    expect(app.introduction).toEqual('Hello, my name is');
+  });
+
+  it(`should have the 'Andrew Cogburn' name`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.name).toEqual('Andrew Cogburn');
   });
 
   it('should render title', () => {
