@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "adcogburn.github.io": {
+    "ADCogburnPortfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/adcogburn.github.io",
+            "baseHref": "/ADCogburnPortfolio",
+            "outputPath": "dist/ADCogburnPortfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "adcogburn.github.io:build:production"
+              "buildTarget": "ADCogburnPortfolio:build:production"
             },
             "development": {
-              "buildTarget": "adcogburn.github.io:build:development"
+              "buildTarget": "ADCogburnPortfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "adcogburn.github.io:build"
+            "buildTarget": "ADCogburnPortfolio:build"
           }
         },
         "test": {
@@ -93,9 +94,6 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
