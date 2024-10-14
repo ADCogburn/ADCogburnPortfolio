@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6, p, ul, li, span {
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h4 span {
+    font-weight: normal;
+}
+
+.project-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,16 +1,19 @@
-<div class="background-layer"></div>
 <main class="main">
-  <div class="container">
     <header>
-      <h5>{{ introduction }}</h5>
-      <h1>{{ name }}</h1>
+      <nav>
+        <ul class="nav-list">
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </header>
   
+    <div class="container">
     <section class="project-section">
+      <h5>{{ introduction }}</h5>
+      <h1>{{ name }}</h1>
       <h2>{{ aboutMe }}</h2>
-    </section>
-  
-    <section class="project-section">
       <h3>Here are some of the projects I've worked on:</h3>
       <ul>
         @for (project of projects; track project.id) {
