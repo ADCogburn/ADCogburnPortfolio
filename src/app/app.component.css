@@ -2,29 +2,52 @@ h1, h2, h3, h4, h5, h6, p, ul, li, span {
     color: white;
 }
 
+nav {
+    height: 80px;    
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
 .nav-list {
     display: flex;
-    gap: 10px;
-    justify-content: end;
-    margin: 0;
-    padding: 0;
+    gap: 50px;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .container {
+    min-width: 100%;
+    max-width: 100%;
+    height: 2000px;
+}
+
+.project-section {
     margin: auto;
-    padding: 20px;
+    margin-top: 100px;
+    min-width: 200px;
+    max-width: 800px;
+    padding: 40px;
     border: 2px solid rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-header {
-    text-align: left;
-    margin-bottom: 30px;
+h1 {
+    font-size: 3em;
 }
 
-h1 {
-    font-size: 2.5rem;
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h5 {
+    font-size: 0.8em;
 }
 
 footer {
@@ -34,10 +57,4 @@ footer {
 
 h4 span {
     font-weight: normal;
-}
-
-.project-item {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }

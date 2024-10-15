@@ -2,7 +2,7 @@
     <header>
       <nav>
         <ul class="nav-list">
-          <li>About</li>
+          <li><a href="#project">About</a></li>
           <li>Projects</li>
           <li>Contact</li>
         </ul>
@@ -10,19 +10,19 @@
     </header>
   
     <div class="container">
-    <section class="project-section">
-      <h5>{{ introduction }}</h5>
-      <h1>{{ name }}</h1>
-      <h2>{{ aboutMe }}</h2>
-      <h3>Here are some of the projects I've worked on:</h3>
-      <ul>
-        @for (project of projects; track project.id) {
-          <li class="project-item"><h4>{{ project.name }}<span> - {{ project.description }}</span></h4></li>
-        }
-        @empty {
-          <li>No projects to display.</li>
-        }
-      </ul>
+      <section class="project-section" id="project">
+        <h5>{{ introduction }}</h5>
+        <h1>{{ name }}</h1>
+        <h2>{{ aboutMe }}</h2>
+        <h3>Projects: </h3>
+        <ul class="project-list">
+          @for (project of projects; track project.id) {
+            <li class="project-item"><h4 class="project-title">{{ project.name }}<span class="project-text"> - {{ project.description }}</span></h4></li>
+          }
+          @empty {
+            <li>No projects to display.</li>
+          }
+        </ul>
     </section>
   </div>
 </main>
