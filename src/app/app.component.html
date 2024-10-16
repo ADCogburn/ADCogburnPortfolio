@@ -1,3 +1,10 @@
+<div class="hidden-background"></div>
+<div class="reveal-container">
+  <div
+    class="mouse-reveal"
+    [ngStyle]="{'background-position': mouseX + 'px ' + mouseY + 'px'}">
+  </div>
+</div>
 <main class="main">
     <header>
       <nav>
@@ -8,7 +15,7 @@
         </ul>
       </nav>
     </header>
-  
+    
     <div class="container">
       <section class="project-section" id="project">
         <h5>{{ introduction }}</h5>
